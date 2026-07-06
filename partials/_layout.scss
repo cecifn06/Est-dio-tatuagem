@@ -112,3 +112,43 @@
 
 }
 
+//------- About section -----------------
+
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+    }
+}
+
+.about-content div{
+   flex:1;
+}
+
+.about-description{
+    h2{
+        font-size: 34px;
+        margin-bottom: 34px;
+    }
+    p{
+        margin-bottom: 24px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+     flex-direction: column;
+    }
+}
