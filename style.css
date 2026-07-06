@@ -52,7 +52,7 @@ i {
 }
 
 .header-logo {
-  width: 40%;
+  width: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +61,7 @@ i {
 
 @media screen and (max-width: 768px) {
   .header-logo img {
-    width: 160px;
+    width: 150px;
     margin-top: 46px;
   }
   .header-content {
@@ -80,8 +80,96 @@ i {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
+.bg-home {
+  position: relative;
+  min-height: 100vh;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero {
+  color: #FFF;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 46px;
+}
+.hero p {
+  text-align: center;
+  margin: 14px 0;
+}
+.hero .button-contact {
+  padding: 14px 28px;
+  color: #FFF;
+  background-color: #d94140;
+  border-radius: 12px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero h1 {
+    font-size: 32px;
+    padding: 0 14px;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 22px;
+  }
+  .button-contact {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

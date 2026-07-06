@@ -48,7 +48,7 @@ i{
 }
 
 .header-logo{
-    width: 40%;
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +57,7 @@ i{
 
 @media screen and (max-width: 768px){
     .header-logo img {
-        width: 160px;
+        width: 150px;
         margin-top: 46px;
     }
     .header-content{
