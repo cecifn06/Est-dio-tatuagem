@@ -152,3 +152,84 @@
      flex-direction: column;
     }
 }
+
+// SERVICES
+
+.services{
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.tatuagem{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+.tatuagem1, .tatuagem2, .tatuagem3{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        transition: transform 0.2s;
+    }
+
+    p, Strong{
+        padding: 14px;
+        line-height: 150%;
+    }
+
+}
+
+.tatuagem-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.tatuagem img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .tatuagem{
+        flex-direction: column;
+        padding: 0 14px 34px 14px;
+    }
+}
